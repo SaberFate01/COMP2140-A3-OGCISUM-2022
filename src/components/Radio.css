@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex: 1;
+
+  cursor: pointer;
+  font-size: 16pt;
+  border: 0.5px solid var(--fgColor);
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  flex: 1;
+  line-height: 16px;
+  min-height: 16px;
+
+  padding: 8px;
+
+  color: var(--fgColor);
+  text-align: center;
+}
+
+/* .container:hover {
+  background-color: var(--fgColorLighter);
+} */
+
+.container input:checked ~ .checkmark {
+  color: var(--bgColor);
+  background-color: var(--fgColor);
+}
+

@@ -1,0 +1,93 @@
+/*Import Font*/
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/*Define the colours*/
+:root {
+  --purpleColorLighter: #A42DE8;
+  --blueColorLighter: #318AFF;
+  --blueColorDarker: #2D3DE8;
+  --bgColor: #ffffff;
+  --fgColor: #800080;
+  --fgColorLighter: rgba(128, 0, 128, 0.5);
+  --headerTextColor: #ffffff;
+}
+
+/*Define colours for dark mode*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bgColor: #422142;
+    --fgColor: #f0c4f0;
+    --fgColorLighter: rgba(210, 169, 210, 0.5);
+    --headerTextColor: var(--fgColor);
+  }
+}
+
+/*For body*/
+body {
+  margin: 0;
+  font-family: DynaPuff;
+  min-width: 348px;
+  background-color: var(--bgColor);
+}
+
+/*set the height*/
+html, body, #root, #root>div {
+  height: 100%;
+}
+
+/*For the buttons*/
+.app-button {
+  padding: 4px 8px;
+  color: var(--fgColor);
+  background: transparent;
+  border: 2px solid var(--fgColor);
+}
+
+/*Button when hovered*/
+.app-button:hover {
+  color: var(--bgColor);
+  background: var(--fgColorLighter);
+  border: 2px solid var(--fgColorLighter);
+}
+
+/*disabled button*/
+.app-button-disabled {
+  padding: 4px 8px;
+  color: var(--fgColorLighter);
+  background: transparent;
+  border: 2px solid var(--fgColorLighter);
+}
+
+/*disabled button hover*/
+.app-button-disabled:hover {
+  color: var(--bgColor);
+  background: var(--fgColorLighter);
+  border: 2px solid var(--fgColorLighter);
+}
+
+/*filled button*/
+.app-button-filled {
+  padding: 4px 8px;
+  color: var(--bgColor);
+  background: var(--fgColor);
+  border: 2px solid var(--fgColor);
+}
+
+/*filled button utton hover*/
+.app-button-filled:hover {
+  color: var(--bgColor);
+  background: var(--fgColorLighter);
+  border: 2px solid var(--fgColorLighter);
+}
+
+/*The input box in the edit page**/
+.app-input {
+  padding: 4px 8px;
+  box-sizing: border-box;
+  font-size: large;
+  font-weight: bolder;
+  color: var(--fgColor);
+  background-color: var(--fgColorLighter);
+  border: var(--fgColorLighter);
+  border-radius: 8px;
+}
+

@@ -1,0 +1,105 @@
+/*This css file is for the edit page*/
+.page-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 480px;
+}
+
+.page-title {
+  color: var(--fgColor);
+  font-size: xx-large;
+  font-weight: bolder;
+  margin: 32px 0 0 32px;
+}
+
+.sample-name-edit-container {
+  display: flex;
+  flex-direction: row;
+  margin: 16px 32px;
+  padding: 12px 24px;
+  border-left: 2px solid var(--fgColor);
+  border-right: 2px solid var(--fgColor);
+  border-top: 2px solid var(--fgColor);
+  border-bottom: 4px solid var(--fgColor);
+}
+
+.sample-name-edit-left {
+  flex: 1;
+}
+
+.sample-name-edit-input {
+  width: 100%;
+  padding-right: -32px;
+}
+
+.sample-name-edit-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.sample-type-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0 32px;
+}
+
+.sample-type-left {
+  padding: 16px;
+  width: 36px;
+  text-align: end;
+
+  color: var(--fgColor);
+}
+
+.sample-type-right {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+
+  border-left: 1px solid var(--fgColor);
+  border-right: 1px solid var(--fgColor);
+  border-top: 1px solid var(--fgColor);
+  border-bottom: 3px solid var(--fgColor);
+}
+
+.note-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0 32px;
+  margin-top: 16px;
+}
+
+.note-item-left {
+  padding: 16px;
+  width: 36px;
+  text-align: end;
+
+  color: var(--fgColor);
+}
+
+.note-item-right {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+
+  border-left: 1px solid var(--fgColor);
+  border-right: 1px solid var(--fgColor);
+  border-top: 1px solid var(--fgColor);
+  border-bottom: 3px solid var(--fgColor);
+}
+
+@media screen and (max-width: 500pt) {
+  .sample-name-edit-container {
+    flex-direction: column;
+  }
+  .sample-name-edit-right {
+    margin-top: 16px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}

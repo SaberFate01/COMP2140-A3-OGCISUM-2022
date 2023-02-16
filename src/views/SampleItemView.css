@@ -1,0 +1,51 @@
+/*This css file is for Sample Item view*/
+.sample-item-container {
+    display: flex;
+    flex-direction: row;
+  
+    margin: 8px 0;
+    padding: 16px 32px;
+
+    border-left: 2px solid var(--fgColor);
+    border-right: 2px solid var(--fgColor);
+    border-top: 2px solid var(--fgColor);
+    border-bottom: 4px solid var(--fgColor);
+  }
+  
+  .sample-item-right-space {
+    flex: 0;
+  }
+  
+  .sample-item-title {
+    color: var(--fgColor);
+  }
+  
+  .sample-item-subtitle {
+    margin-top: 8px;
+  
+    color: var(--fgColorLighter);
+    font-size: small;
+  }
+  
+  .sample-item-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .sample-item-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 500pt) {
+    .sample-item-container {
+      flex-direction: column;
+    }
+    .sample-item-right {
+      margin-top: 16px;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }

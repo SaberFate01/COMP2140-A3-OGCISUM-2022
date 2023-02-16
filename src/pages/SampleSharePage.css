@@ -1,0 +1,43 @@
+/*This is the css page for share page*/
+.page-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.page-content {
+  margin: 16px 32px;
+}
+
+.page-title {
+  color: var(--fgColor);
+  font-size: xx-large;
+  font-weight: bolder;
+  margin: 32px 0 0 32px;
+}
+
+.location-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 8px 0;
+}
+
+.location-item-left {
+  flex: 1;
+  align-items: center;
+
+  color: var(--fgColor);
+}
+
+.location-item-right {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+
+  border-left: 1px solid var(--fgColor);
+  border-right: 1px solid var(--fgColor);
+  border-top: 1px solid var(--fgColor);
+  border-bottom: 3px solid var(--fgColor);
+}
